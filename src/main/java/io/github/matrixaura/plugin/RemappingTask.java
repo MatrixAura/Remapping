@@ -37,7 +37,7 @@ public class RemappingTask extends DefaultTask {
 
         try (Jar inputJar = Jar.init(archiveFile)) {
             JarMapping jarMapping = new JarMapping();
-            jarMapping.loadMappings(mapping.get().getAbsolutePath(), true, false, null, null);
+            jarMapping.loadMappings(mapping.get().getAbsolutePath(), false, false, null, null);
 
             JointProvider provider = new JointProvider();
             provider.add(new JarProvider(inputJar));
