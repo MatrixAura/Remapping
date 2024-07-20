@@ -18,17 +18,10 @@ dependencies {
 
 
 gradlePlugin {
-    website.set("https://github.com/MatrixAura/Remapping")
-    vcsUrl.set("https://github.com/MatrixAura/Remapping")
-
     plugins {
-        create("remapping") {
+        create("RemappingPlugin") {
             id = "dev.zl930.remapping"
-            displayName = "Remapping"
-            description = "This gradle plugin will remapped your projects using mcp-to-searge mapping."
-            tags = listOf("searge", "mapping", "mojang", "utils", "remapper")
-            implementationClass = "dev.zl930.remapping.RemappingPlugin"
+            implementationClass = "dev.zl930.plugin.RemappingPlugin"
         }
     }
-
 }
