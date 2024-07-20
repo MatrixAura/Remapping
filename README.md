@@ -2,14 +2,28 @@
 A Gradle plugin that automatically re-obfuscates your jar according to the MCP obfuscation mappings.
 
 ## Imports
-To import the plugin you will need to add this to your build.gradle.kts
-```
-id("dev.zl930.plugin") version "1.0.0"
-```
+To import the plugin you will need to add this to your build.gradle(.kts)
 
-## Configuration
+kotlin
+```kotlin
+id("io.github.matrixaura.remapping") version "1.0.0"
 ```
+groovy
+```groovy
+id 'io.github.matrixaura.remapping' version '1.0.0'
+```
+## Configuration (Example)
+groovy
+```groovy
 remap {
-    // This sets the mcp version
-    version.set("1.8.9")
+    // This sets the mapping file
+    mapping.set(file('src/main/resources/foo/bar/mapping.srg'))
 }
+```
+kotlin
+```kotlin
+remap {
+    // This sets the mapping file
+    mapping.set(file("src/main/resources/foo/bar/mapping.srg"))
+}
+```

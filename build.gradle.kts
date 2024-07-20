@@ -3,7 +3,7 @@ plugins {
     id("com.gradle.plugin-publish") version "1.2.1"
 }
 
-group = "dev.zl930"
+group = "io.github.matrixaura"
 version = "1.0.0"
 
 repositories {
@@ -18,9 +18,16 @@ dependencies {
 
 
 gradlePlugin {
+
+    website.set("https://github.com/MatrixAura/Remapping")
+    vcsUrl.set("https://github.com/MatrixAura/Remapping")
+
     plugins {
         create("RemappingPlugin") {
             id = "io.github.matrixaura.remapping"
+            displayName = "Remapping Plugin"
+            description = "This gradle plugin will remapped your generated jar with customizable mappings."
+            tags = listOf("mapping", "utils", "remapper")
             implementationClass = "io.github.matrixaura.plugin.RemappingPlugin"
         }
     }
