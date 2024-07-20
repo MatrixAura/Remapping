@@ -1,4 +1,4 @@
-package dev.zl930.plugin;
+package io.github.matrixaura.plugin;
 
 import lombok.Getter;
 import net.md_5.specialsource.Jar;

@@ -20,8 +20,8 @@ dependencies {
 gradlePlugin {
     plugins {
         create("RemappingPlugin") {
-            id = "dev.zl930.remapping"
-            implementationClass = "dev.zl930.plugin.RemappingPlugin"
+            id = "io.github.matrixaura.remapping"
+            implementationClass = "io.github.matrixaura.plugin.RemappingPlugin"
         }
     }
 }

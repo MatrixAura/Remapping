@@ -1,4 +1,4 @@
-package dev.zl930.plugin;
+package io.github.matrixaura.plugin;
 
 import org.gradle.api.Plugin;
 import org.gradle.api.Project;
