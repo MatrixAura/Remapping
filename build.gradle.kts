@@ -16,7 +16,6 @@ dependencies {
     annotationProcessor("org.projectlombok:lombok:1.18.4")
 }
 
-
 gradlePlugin {
 
     website.set("https://github.com/MatrixAura/Remapping")
@@ -24,6 +23,7 @@ gradlePlugin {
 
     plugins {
         create("RemappingPlugin") {
+            group = "io.github.matrixaura"
             id = "io.github.matrixaura.remapping"
             displayName = "Remapping Plugin"
             description = "This gradle plugin will remapped your generated jar with customizable mappings."
